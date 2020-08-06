@@ -1,7 +1,7 @@
-(defproject nippy "0.1.0-SNAPSHOT"
+(defproject at-at "0.1.0-SNAPSHOT"
 
   :dependencies [[org.clojure/clojure "1.10.1"]
-                 [com.taoensso/nippy "2.15.1-SNAPSHOT"]]
+                 [overtone/at-at "1.2.0"]]
 
   :main simple.main
 

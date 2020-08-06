@@ -1,7 +1,7 @@
 (defproject sample-project "0.1.0-SNAPSHOT"
 
   :dependencies [[org.clojure/clojure "1.10.1"]
-                 [http-kit "2.3.0"]
+                 [http-kit "2.4.1-SNAPSHOT"]
                  ]
 
   :main simple.main
@@ -16,6 +16,7 @@
    ["shell"
     "native-image" "--report-unsupported-elements-at-runtime" "--no-server"
     "--initialize-at-build-time"
+    "--enable-url-protocols=http,https"
     "-jar" "./target/${:uberjar-name:-${:name}-${:version}-standalone.jar}"
     "-H:Name=./target/${:name}"]
 
